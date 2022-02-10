@@ -277,8 +277,19 @@ body{
   text-align: center;
 }
 
-.how-to__box circle:hover{
+.how-to__box circle,
+.how-to__box text{
+  transition: all .5s;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.how-to__box g:hover circle{
   r: 20px;
   fill: #2F80ED;
+}
 
+.how-to__box g:hover text{
+  fill: #2F80ED;
+  font-size: 36px;
 }
